@@ -18,5 +18,4 @@ jobs:
 
       - name: Print test output
         run: |
-          echo "Test output file location $TEST_OUTPUT_FILE"
-          cat $TEST_OUTPUT_FILE
+          cat /github/home/output.log
