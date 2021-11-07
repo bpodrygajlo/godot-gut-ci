@@ -17,4 +17,6 @@ jobs:
           output_file: output.log
 
       - name: Print test output
-        run: cat $TEST_OUTPUT_FILE
+        run: |
+          echo "Test output file location $TEST_OUTPUT_FILE"
+          cat $TEST_OUTPUT_FILE
