@@ -41,6 +41,7 @@ then
   /usr/local/bin/godot -d -s --path $PWD addons/gut/gut_cmdln.gd -gexit -gdir=$UNIT_TEST_PATH $INTEGRATION_TEST_PATH
 else
   TEST_OUTPUT_FILE_PATH=/github/home/$4
-  /usr/local/bin/godot -d -s --path $PWD addons/gut/gut_cmdln.gd -gexit -gdir=$UNIT_TEST_PATH $INTEGRATION_TEST_PATH > $TEST_OUTPUT_FILE
+  echo "${TEST_OUTPUT_FILE_PATH}"
+  /usr/local/bin/godot -d -s --path $PWD addons/gut/gut_cmdln.gd -gexit -gdir=$UNIT_TEST_PATH $INTEGRATION_TEST_PATH > "${TEST_OUTPUT_FILE_PATH}"
   echo "Output saved to `readlink -f $TEST_OUTPUT_FILE_PATH`"
 fi
