@@ -17,4 +17,4 @@ jobs:
           output_file: output.log
 
       - name: Print test output
-        run: cat output.log
+        run: cat $TEST_OUTPUT_FILE
