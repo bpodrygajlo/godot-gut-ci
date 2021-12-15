@@ -14,3 +14,8 @@ jobs:
         with:
           godot_version: 3.2.2
           unit_test: res://tests/unit
+          output_file: output.log
+
+      - name: Print test output
+        run: |
+          cat /home/runner/work/_temp/_github_home/output.log

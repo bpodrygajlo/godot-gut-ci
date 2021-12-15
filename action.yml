@@ -14,6 +14,9 @@ inputs:
   integration_test:
     description: 'Integration tests path'
     required: false
+  output_file:
+    description: 'File to redirect stdout to'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -21,3 +24,4 @@ runs:
     - ${{ inputs.godot_version }}
     - ${{ inputs.unit_test }}
     - ${{ inputs.integration_test }}
+    - ${{ inputs.output_file }}

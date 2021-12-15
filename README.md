@@ -37,6 +37,7 @@ Some action parameter can be customised using the `with` property:
 |godot_version|The godot version you want to use to run your tests|3.2.2|
 |unit_test|The godot resource folder containing your unit tests|res://tests/unit|
 |integration_test|The godot resource folder containing your integration tests||
+|output_file|Name of the output file. Outputs to stdout if not specified||
 
 **NOTE**: If you're customising `unit_test` or `integration_test`, don't forget to specify the `res://` prefix.
 
