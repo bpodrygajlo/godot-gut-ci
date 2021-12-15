@@ -18,4 +18,4 @@ jobs:
 
       - name: Print test output
         run: |
-          cat /github/home/output.log
+          cat /home/runner/work/_temp/_github_home/output.log
